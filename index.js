@@ -13,7 +13,7 @@ const port = 3000;
 app.use(express.json());
 
 app.post('/generate-about', async (req, res) => {
-  const { keyword } = req.body;
+  const { word } = req.body;
 
   if (!word) {
     return res.status(400).json({ error: 'keyword is required' });
